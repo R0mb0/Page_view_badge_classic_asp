@@ -10,7 +10,7 @@
 
 Simple page view counter badge for Classic ASP applications. Stores counts in a JSON file, uses per-page keys, and can be embedded via iframe to show a light or dark themed visit counter on any legacy site, including static HTML pages.
 
-## How it works
+## ⚙️ How it works
 
 - `counter_json.inc` provides a tiny JSON-based storage for page view counters.
 - `badge_counter.asp` renders a GitHub-style "Visits" badge and reads/updates the counter.
@@ -19,7 +19,7 @@ Simple page view counter badge for Classic ASP applications. Stores counts in a 
 Counters are stored in a JSON file on disk (`page_counters.json`).  
 Each page is identified by a simple **page key** (for example, `/test_page.asp`).
 
-## Installation
+## 📦 Installation
 
 1. Copy these files into a Classic ASP application:
 
@@ -47,9 +47,9 @@ Each page is identified by a simple **page key** (for example, `/test_page.asp`)
    This works when both files are in the same folder.  
    Otherwise, adjust the path accordingly (for example, `../includes/counter_json.inc`).
 
-## Usage
+## 🚀 Usage
 
-### From a Classic ASP page
+### 🧩 From a Classic ASP page
 
 Example (`test_page.asp` shows this):
 
@@ -73,7 +73,7 @@ pageKey = Request.ServerVariables("SCRIPT_NAME")
   - `increment` — increment and display the counter (default);
   - `view` — display the current value without incrementing.
 
-### From a static HTML page
+### 📄 From a static HTML page
 
 You can embed the badge from **any** technology (static HTML, PHP, ASP.NET, CMS, etc.) using an iframe that points to your ASP badge endpoint:
 
@@ -87,7 +87,7 @@ You can embed the badge from **any** technology (static HTML, PHP, ASP.NET, CMS,
 
 Here the key `/static/page.html` is counted each time the page is loaded.
 
-## JSON storage format
+## 🗂️ JSON storage format
 
 The JSON file uses a very simple structure:
 
@@ -101,7 +101,7 @@ The JSON file uses a very simple structure:
 - Keys are page identifiers (paths or custom strings).
 - Values are numeric visit counters.
 
-## Notes
+## 📝 Notes
 
 - The implementation uses `Application.Lock`/`Application.UnLock` to avoid race conditions when multiple requests update the JSON file.
 - The JSON parser is intentionally simple and assumes keys do not contain commas.  
