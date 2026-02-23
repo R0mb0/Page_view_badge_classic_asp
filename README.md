@@ -106,3 +106,11 @@ The JSON file uses a very simple structure:
 - The implementation uses `Application.Lock`/`Application.UnLock` to avoid race conditions when multiple requests update the JSON file.
 - The JSON parser is intentionally simple and assumes keys do not contain commas.  
   Using short path-like keys (e.g. `/path/to/page`) is recommended.
+
+<a href="https://github.com/R0mb0/Crafted_with_AI">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/CraftedWithAIDark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAILight.svg">
+    <img alt="Not made by AI" src="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAIDefault.svg">
+  </picture>
+</a>
