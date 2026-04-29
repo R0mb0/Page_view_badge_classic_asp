@@ -10,6 +10,8 @@
 
 Simple page view counter badge for Classic ASP applications. Stores counts in a JSON file, uses per-page keys, and can be embedded via iframe to show a light or dark themed visit counter on any legacy site, including static HTML pages.
 
+
+
 ## ⚙️ How it works
 
 - `counter_json.inc` provides a tiny JSON-based storage for page view counters.
